@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Manal Lamine (geekette86@gmail.com)">
+	
+	<title>Manal Lamine - Test WireDelta</title>
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/geekette.css">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Hello</a></li>
+				<li><a href="#task1">Task 1</a></li>
+				<li><a href="#task2">Task 2</a></li>
+				<li><a href="#task3">Task 3</a></li>
+				<li><a href="#task4">Task 4</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!-- Main section -->
+<section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+		<h2 class="text-center title">Get in touch</h2>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<p class="lead">Have a question about me or my cursus?</p>
+				<p>Feel free to email me, or drop me a line in Twitter!</p>
+				<p><b>geekette86@gmail.com</b><br><br></p><p><b>Coded with 2 cups of Coffee</b>
+				<ul class="list-inline list-social">
+					<li><a href="https://twitter.com/Geekette86" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+					<li><a href="https://tn.linkedin.com/in/manal86/fr" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+
+	
+	</div>
+</section>
+
+<!-- Task 1 section -->
+<section class="section" id="task1">
+	<div class="container">
+	
+		<h2 class="text-center title">THE AGE CALCULATOR</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>Code is here!<br></strong></h5>
+				<p>
+					<pre>
+						function calculateAge(birthYear, currentYear)
+						{
+ 							return (currentYear - birthYear);
+						}
+					</pre>
+					OR
+					<pre>
+						function calculateAge(birthYear)
+						{
+							var currentYear = new Date().getFullYear();
+ 							return (currentYear - birthYear);
+						}
+					</pre>
+				</p>    
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>You can test it here!<br></strong></h5>    
+				<p>
+ 	   				Your year of birth:  
+ 	   				<input id="year">
+ 				</p>
+				<p>
+   					<span id = "result1"></span>
+ 
+				</p>    
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Task 2 section -->
+<section class="section" id="task2">
+	<div class="container">
+	
+		<h2 class="text-center title">THE LIFETIME SUPPLY CALCULATOR</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>Code is here!<br></strong></h5>
+				<p>
+					<pre>
+						function calculateSupply(age, amount)
+						{
+							var max = 100;
+  							return (parseInt((amount * 365) * (max - age)));
+						}
+					</pre>
+				</p>    
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>You can test it here!<br></strong></h5>    
+				<p>
+ 	   				Your age:  
+ 	   				<input id="age">
+ 				</p>
+ 				<p>
+ 					amount/day:  
+ 				   	<input id="amount">
+ 				</p>
+				<p>
+   					<span id = "result2"></span>
+ 				</p> 
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+<!-- Task 3 section -->
+<section class="section" id="task3">
+	<div class="container">
+	
+		<h2 class="text-center title">THE GEOMETRIZER</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>Code is here!<br></strong></h5>
+				<p>
+					<pre>
+						function calcCircumfrence(radius)
+						{
+  							return (Math.PI * 2 * radius);
+						}
+	
+						function calcArea(radius)
+						{
+  							return (Math.PI * radius * radius); 
+						}
+					</pre>
+				</p>    
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>You can test it here!<br></strong></h5>    
+				<p>
+ 	   				Radius:  
+ 	   				<input id="radius">
+ 				</p>
+				<p>
+   					<span id = "result31"></span>
+ 				</p> 
+  				<p>
+   					<span id = "result32"></span>
+ 				</p> 
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+<!-- task 4 section -->
+<section class="section" id="task4">
+	<div class="container">
+	
+		<h2 class="text-center title">THE TEMPERATURE CONVERTER</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>Code is here!<br></strong></h5>
+				<p>
+					<pre>
+						function celsiusToFahrenheit(c)
+						{
+  							return (f = (c * 9) / 5 + 32); 
+						}
+
+						function fahrenheitToCelsius(f)
+						{
+  							return (((f - 32) * 5) / 9);
+						}
+					</pre>
+				</p>    
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>You can test it here!<br></strong></h5>    
+				<p>
+  	 				°C -> °F: 
+ 	 				<input id="C">
+					<span id = "result41"></span>
+				</p>
+				<p>
+	  			 	°F -> °C:
+          			 	<input id="F">
+					<span id = "result42"></span></td>
+				</p>
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.custom.72241.js"></script>
+<!-- scripts -->
+<script src="assets/js/geekette.js"></script>
+<script src="assets/js/index1.js"></script>
+<script src="assets/js/index2.js"></script>
+<script src="assets/js/index3.js"></script>
+<script src="assets/js/index4.js"></script>
+</body>
+</html>
